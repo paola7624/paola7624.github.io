@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#trabajos">Trabajos</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#perfiles-sociales">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Presentación -->
+    <div id="presentacion">
+        <div class="fondo-presentacion">
+            <img src="/recursos/Heather Green -pexels-heather-green-1125370-18786374.jpg" alt="Portada">
+        </div>
+        <div class="presentacion-contenido">
+            <h1>¡Hola! Soy Paola, programadora e ilustradora desde Uruguay.</h1>
+            <p>
+                Desde que descubrí la programación en la universidad, supe que era el camino ideal para mí.
+                Me apasiona la combinación de creatividad y pensamiento lógico para diseñar experiencias digitales únicas.<br>
+                ¡Bienvenid@ a mi portafolio!
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Trabajos -->
+    <div id="trabajos">
+        <div class="filtro-trabajos portfolio-box">
+            <h2>Trabajos</h2>
+            <ul>
+                <li class="proyectos-tipo selecionado"><a href="#trabajos">Ilustraciones</a></li>
+                <li class="proyectos-tipo selecionado"><a href="#trabajos">Desarrollo Web</a></li>
+                <li class="proyectos-tipo selecionado"><a href="#trabajos">Diseño Gráfico</a></li>
+            </ul>
+        </div>
+
+        <!-- Lista de proyectos -->
+        <div class="portfolio-box">
+            <a href="">
+                <div class="portfolio-box-portada"> <!--Remover div al a;adir imgenes-->
+                    <!-- <img src="" alt=""> -->
+                </div>
+            </a>
+            <div class="descripcion">
+                <h4>Proyecto 01</h4>
+                <p>Descripción de proyecto</p>
+            </div>
+        </div>
+       <div class="portfolio-box">
+        <a href="">
+            <div class="portfolio-box-portada"> <!--Remover div al a;adir imgenes-->
+                <!-- <img src="" alt=""> -->
+            </div>
+        </a>
+        <div class="descripcion">
+            <h4>Proyecto 02</h4>
+            <p>Descripción de proyecto</p>
+        </div>
+    </div>
+    <div class="portfolio-box">
+        <a href="">
+            <div class="portfolio-box-portada"> <!--Remover div al a;adir imgenes-->
+                <!-- <img src="" alt=""> -->
+            </div>
+        </a>
+        <div class="descripcion">
+            <h4>Proyecto 03</h4>
+            <p>Descripción de proyecto</p>
+        </div>
+    </div>
+        <!-- Más proyectos aca -->
+    </div>
+
+
+    <!-- Sobre mí -->
+    <div id="sobre-mi">
+        <!-- Habilidades y conocimientos -->
+        <div id="habilidades">
+            <h2>Habilidades y conocimientos</h2>
+            <ul>
+                <li><b>Desarrollo web:</b> HTML5, CSS3, JavaScript</li>
+                <li><b>Ilustración y diseño:</b> Adobe Photoshop, Illustrator, InDesign, Figma, Aseprite, Krita</li>
+                <li><b>Analítica web/Métricas:</b> Google Analytics, Google Ads</li>
+            </ul>
+        </div>
+
+        <!-- Educación -->
+        <div id="edu">
+            <h2>Educación</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Entidad</th>
+                        <th>Promoción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Desarrollador Web</td>
+                        <td>Plan Ceibal (Jóvenes a programar)</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td>Lic. en Diseño y Comunicación Visual</td>
+                        <td>Facultad de Arquitectura, Diseño y Urbanismo</td>
+                        <td>En curso</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- Perfiles Sociales -->
+    <div id="perfiles-sociales">
+        <h2>Puedes encontrarme en:</h2>
+        <ul>
+            <li><a href="">Linkedin</a></li>
+            <li><a href="">Github</a></li>
+            <li><a href="">Behance</a></li>
+            <li><a href="">Instagram</a></li>
+        </ul>
+    </div>
+
+    
+    <!-- Contacto -->
+    <div id="contacto-formulario">
+        <div id="contacto-formulario-contendor">
+        <div>
+            <h1>Hablemos,<br>envíame un mensaje</h1>
+        </div>
+        <div>
+            <form method="post" action="index.html">
+                <label for="para">Nombre</label>
+                <input type="text" name="para" id="para" required><br>
+
+                <label for="email">Correo</label>
+                <input type="email" name="email" id="email" required><br>
+
+                <label for="tema">Asunto</label>
+                <select name="tema" id="tema">
+                    <option disabled selected hidden></option>
+                    <option>Desarrollo Web</option>
+                    <option>Diseño Grágico</option>
+                    <option>Ilustración</option>
+                    <option>Otro</option>
+                </select><br>
+
+                <label for="cuerpo">Cuéntame sobre tu proyecto</label>
+                <textarea name="cuerpo" rows="2" cols="40" ></textarea>
+                
+                <button type="submit">Enviar</button><br>
+            </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
