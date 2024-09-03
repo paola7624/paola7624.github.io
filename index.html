@@ -9,7 +9,12 @@
 <body>
     <!-- Menu de navegación -->
     <nav>
-        <ul>
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul id="menu" class="hidden">
             <li><a href="#trabajos">Trabajos</a></li>
             <li><a href="#sobre-mi">Sobre mí</a></li>
             <li><a href="#perfiles-sociales">Contacto</a></li>
@@ -158,12 +163,16 @@
                 </select><br>
 
                 <label for="cuerpo">Cuéntame sobre tu proyecto</label>
-                <textarea name="cuerpo" rows="2" cols="40" ></textarea>
+                <textarea name="cuerpo" id="cuerpo" rows="2" cols="40" ></textarea>
                 
                 <button type="submit">Enviar</button><br>
             </form>
         </div>
         </div>
     </div>
+
+    
+    <script src="script.js"></script>
+
 </body>
 </html>
